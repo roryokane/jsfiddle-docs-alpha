@@ -20,6 +20,7 @@ Contents
 .. toctree::
    :maxdepth: 2
 
+   basic/introduction.rst
    use/index.rst
    api/index.rst
 

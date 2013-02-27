@@ -54,6 +54,14 @@ All fields are optional. New fiddle setting will be used if no data provided.
 
 **dtd**
    substring of the chosen DTD (i.e. "html 4")
+
+**wrap**
+   set the JS code wrap:
+
+   * *l* - onLoad
+   * *d* - domReady
+   * *h* - no wrap - in <head>
+   * *b* - no wrap - in <body>  
   
 
 Example

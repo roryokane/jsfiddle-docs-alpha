@@ -111,8 +111,8 @@ the example on the page without accessing the article's code.
 Fiddle Settings (Sidebar)
 =========================
 
-Choose Framework
-----------------
+Frameworks and Extensions
+-------------------------
 
 .. figure:: /_static/screenshots/choose-framework.png
    :align: right                                            
@@ -120,22 +120,7 @@ Choose Framework
 
 Contains 2 selectable lists.
 
-First is about the **Code Wrap** with default setting to "onLoad". 
-There are 4 options to choose:
-
-**no wrap(head)**:
-   *do not wrap* the JavaScript code, place it in ``<head>`` section
-
-**no wrap(body)**:
-   *do not wrap* the JavaScript code, place it in ``<body>`` section
-
-**onLoad**:
-   wrap the code so it will run in *onLoad* ``window`` event
-
-**onDomReady**:
-   wrap the code so it will run in *onDomReady* ``window`` event
-
-The second drop down contains the **list of all supported frameworks**. 
+First is the **list of all supported frameworks**. 
 Choosing one will create ``<script>`` tag in the ``<head>`` section which 
 will load the desired framework version. Choosing the *No-Library* one will 
 not load any framework.
@@ -146,40 +131,26 @@ will load a lit containing MooTools More, Clientcide, FormCheck, Upgrade
 Helper and ART. All these may be loaded with the fiddle if checkbox is 
 checked.
 
-It contains also a field called *Library tag attributes* which adds 
-attributes to the script tag loading the framework.
-``<script type='text/javascript' src='/js/lib/mootools-1.2.4-core-nc.js' {input_value}></script>``
+Second drop-down is about the **Code Wrap** with default setting to "onLoad". 
+There are 4 options to choose:
 
-.. _normalize_css:
+**onLoad**:
+   wrap the code so it will run in *onLoad* ``window`` event
 
-Next is the **Normalized CSS** checkbox, selected by default. If
-selected, the fiddle will be rendered with `normalize.css
-<http://jsfiddle.net/css/normalize.css>`_ which is removing most of the
-browser styling of many HTML tags.
+**onDomReady**:
+   wrap the code so it will run in *onDomReady* ``window`` event
 
+**no wrap - in <head>**:
+   *do not wrap* the JavaScript code, place it in ``<head>`` section
 
-.. _add_resources:
+**no wrap - in <body>**:
+   *do not wrap* the JavaScript code, place it in ``<body>`` section
 
-Add Resources
--------------
-
-.. figure:: /_static/screenshots/manage-resources.png
-   :align: right                                            
-   :figwidth: 253px                                          
-
-CSS or JS (with appropriate extension) which should be loaded after the 
-framework. It's a perfect place to put libraries which are framework 
-independent, like `RaphaelJS <http://raphaeljs.com>`_
-
-.. warning:: jsFiddle is recognizing the type of the resource by the extension. 
- If you want to use a dynamic resource please add a dummy GET variable i.e.
- ``http://example.com/download/js/dynamically.js?somevar=somevalue&dummy=.js``.
- This will trick jsFiddle to recognize it as JavaScript resource.
 
 .. _fiddle_settings-info:
 
-Info
-----
+Fiddle Options
+--------------
 
 .. figure:: /_static/screenshots/info.png
    :align: right                                            
@@ -194,6 +165,12 @@ Info
   Please provide a description of the fiddle. It will be displayed in your
   public fiddle list.
 
+.. _normalize_css:
+**Normalized CSS**:
+  A checkbox, deselected by default. If selected, the fiddle will be rendered 
+  with `normalize.css <http://jsfiddle.net/css/normalize.css>`_ which is 
+  removing most of the browser styling of many HTML tags.
+
 **Body Tag**:
   One can change the body tag. It is usually done to change the styling as 
   ``<body class="dark_ui">``. Some frameworks (Dojo) are using it to style 
@@ -203,3 +180,39 @@ Info
   A choice few useful DTDs is available - HTML5, XHTML (strict, 
   transitional) , HTML4 (strict, transitional, frameset). We aim to not fire
   warning or errors on the syntax checks.
+
+**Framework <script> attribute**:
+  An ability to add special attributes to the script tag loading the framework.
+  That would result with ``<script type="text/javascript" src="/js/lib/someframework.js" {attributes}></script>``
+
+.. _add_resources:
+
+External Resources
+------------------
+
+.. figure:: /_static/screenshots/manage-resources.png
+   :align: right                                            
+   :figwidth: 253px                                          
+
+CSS or JS (with appropriate extension) which should be loaded after the 
+framework. It's a perfect place to put libraries which are framework 
+independent, like `RaphaelJS <http://raphaeljs.com>`_
+
+JSFiddle is recognizing the type of the resource by the extension. 
+JavaScript will be chosen if type is unknown.
+
+.. note:: 
+ If you want to use a dynamic resource please add a dummy GET variable i.e.
+ ``http://example.com/dynamically.php?somevar=somevalue&dummy=.css``.
+ This will trick jsFiddle to recognize it as CSS resource. 
+
+Languages
+---------
+
+.. figure:: /_static/screenshots/languages.png
+   :align: right                                            
+   :figwidth: 253px                                          
+
+Some non HTML5 languages are supported. Currently you may choose to use
+``SCSS`` instead of ``CSS`` and ``CoffeeScript`` or ``JavaScript 1.7`` instead
+of ``Javascript``.

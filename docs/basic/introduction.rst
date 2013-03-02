@@ -205,14 +205,3 @@ JavaScript will be chosen if type is unknown.
  If you want to use a dynamic resource please add a dummy GET variable i.e.
  ``http://example.com/dynamically.php?somevar=somevalue&dummy=.css``.
  This will trick jsFiddle to recognize it as CSS resource. 
-
-Languages
----------
-
-.. figure:: /_static/screenshots/languages.png
-   :align: right                                            
-   :figwidth: 253px                                          
-
-Some non HTML5 languages are supported. Currently you may choose to use
-``SCSS`` instead of ``CSS`` and ``CoffeeScript`` or ``JavaScript 1.7`` instead
-of ``Javascript``.

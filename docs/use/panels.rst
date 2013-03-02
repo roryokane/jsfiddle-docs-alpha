@@ -1,10 +1,10 @@
 .. _panels:
 
-=============
-Custom Panels
-=============
+=========
+Languages
+=========
 
-.. figure:: /_static/screenshots/custompanels.png
+.. figure:: /_static/screenshots/languages.png
    :align: right
    :figwidth: 222px
 

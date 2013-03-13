@@ -6,7 +6,7 @@ Welcome! This is the documentation for `jsFiddle <http://jsfiddle.net/>`_.
 
 .. note::
     This documentation is a work in progress, there are multiple missing and
-    outdated elements. Please see `how to contribute <misc/contributing.rst>`_.
+    outdated elements. Please see :ref:`how to contribute <misc-contribute>`.
 
 
 Contents

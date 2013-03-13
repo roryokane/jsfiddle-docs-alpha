@@ -19,22 +19,22 @@ We use GitHub to track bugs and suggestions for the platform.
   * Share your example / problem with others, this will help us to
     evaluate the scope of the issue.
   * Check against the list of `open issues
-    <https://github.com/jsfiddle/jsfiddle-docs-alpha/issues>`_ to ensure
+    <https://github.com/jsfiddle/jsfiddle-issues/issues>`_ to ensure
     that this has not been reported already.
   * As a result, if you feel your bug is valid, please create a `new
-    issue <https://github.com/jsfiddle/jsfiddle-docs-alpha/issues/new>`_
+    issue <https://github.com/jsfiddle/jsfiddle-issues/issues/new>`_
     on GitHub.
 
 **Suggestions**
   We welcome your suggestions for the platform - however, please be aware
   that we have a firm roadmap for its continued development. The best way
   to share your suggestion is to create create a `new
-  issue <https://github.com/jsfiddle/jsfiddle-docs-alpha/issues/new>`_
+  issue <https://github.com/jsfiddle/jsfiddle-issues/issues/new>`_
   on GitHub.
 
 
 .. note::
-   We use the *jsFiddle-docs-alpha* issue system for the live site and all
+   We use the *jsFiddle-issues* issue system for the live site and all
    jsFiddle related problems.
 
 

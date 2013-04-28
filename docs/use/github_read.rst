@@ -55,7 +55,7 @@ All above fields are optional.
 Run in jsFiddle
 ---------------
 
-One need to choose the framework and the Gist id using the URL:
+One need to choose the framework and the GitHub path using the URL:
 
 URL: ``http://jsfiddle.net/gh/get/{framework}/{version}/{github_tree}/``
 

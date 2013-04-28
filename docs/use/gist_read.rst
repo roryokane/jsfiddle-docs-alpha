@@ -70,7 +70,7 @@ URL: ``http://jsfiddle.net/gh/gist/{framework}/{version}/dependencies/{dependenc
    comma separated list of dependency substrings. It would mark any dependency containing the substring.
 
 **gist_id**
-   gist id displayed in url (without "http://gist.github.com/")
+   gist id displayed in url ("http://gist.github.com/{username}/{gist_id}/")
 
 Example
 =======

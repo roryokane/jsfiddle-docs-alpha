@@ -14,13 +14,17 @@ One need to choose the framework using the URL:
 
 URL: ``http://jsfiddle.net/api/post/{framework}/{version}/``
 
+Use ``library/pure`` for no framework:
+
+URL: ``http://jsfiddle.net/api/post/library/pure/``
+
 There is an option to add dependencies as a comma separated list:
 
 URL: ``http://jsfiddle.net/api/post/{framework}/{version}/dependencies/{dependency_list}/``
 
 **framework**
    the desired framework name. Which framework should be loaded with the 
-   fiddle (vanilla for plain JavaScript)
+   fiddle.
 
 **version**
    substring of the framework version - the last passing will be used. If 1.3 
@@ -68,9 +72,4 @@ Example
 =======
 
 http://jsfiddle.net/zalun/sthmj/embedded/result/
-
-.. note::
-   If you'd like to use Vanilla JavaScript (pure JS) please set framework as
-   ``library`` and version as ``pure``. Like 
-   ``http://jsfiddle.net/api/post/library/pure``
 
